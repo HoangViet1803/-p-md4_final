@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include("layouts/header.ejs") %>
+    <title>Success</title>
+</head>
+
+<body class="m-5">
+<h3>BẠN ĐÃ UPDATE THÀNH CÔNG</h3>
+
+<p>
+    Tên Học Viên : <%= student.fullname %>
+</p>
+<p>
+    Lớp: <%= student.class %>
+</p>
+<p>
+    Điểm Thực Hành: <%= student.practical %>
+</p>
+<p>
+    Điểm Lý Thuyết: <%= student.theory %>
+</p>
+<p>
+    Đánh Giá: <%= student.review %>
+</p>
+<p>
+    Mô Tả: <%= student.description %>
+</p>
+
+<button class="btn btn-primary"><a href="/students/list"
+    style="color: aliceblue !important; text-decoration: none;">Back to list</a></button>
+<%- include("layouts/cdn.ejs") %>
+
+</body>
+</html>
